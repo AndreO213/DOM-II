@@ -67,7 +67,7 @@ let pic = document.querySelector("img")
   footer.addEventListener("mouseenter", event => {
       event.target.style.fontSize ="22px"
       event.target.style.backgroundColor = "blue"
-  })
+  });
 
 //   window.addEventListener("load", checkCookies())
   
@@ -82,8 +82,8 @@ let pic = document.querySelector("img")
 //   }
 // }
 
-let lastSection = document.querySelectorAll("section")
+let lastSection = document.getElementsByClassName("btn")
 
-lastSection[1].addEventListener("click", event => {
-    event.target.style.background = 'url(https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80)'
+lastSection[0].addEventListener("click", event => {
+    event.target.style.background = 'red'
 })
